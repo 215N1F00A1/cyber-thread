@@ -1,73 +1,103 @@
-# Welcome to your Lovable project
+# 🚀 Cyber Thread – A Mini LinkedIn-like Community Platform
 
-## Project info
+A fully responsive and functional LinkedIn-style community app where users can register, log in, create posts, and explore public profiles of other members.
 
-**URL**: https://lovable.dev/projects/b65f4b1b-605d-40e8-8c88-b7d93502b0ce
+> ✅ Built as part of the Full Stack Internship at **CIAAN Cyber Tech Pvt. Ltd**
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🌐 Live Demo
 
-**Use Lovable**
+🔗 [https://cyber-thread.vercel.app](https://cyber-thread.vercel.app)  
+🔗 GitHub Repo: [https://github.com/215N1F00A1/cyber-thread](https://github.com/215N1F00A1/cyber-thread)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b65f4b1b-605d-40e8-8c88-b7d93502b0ce) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ⚙️ Tech Stack
 
-**Use your preferred IDE**
+### Frontend
+- **Next.js** (App Router)
+- **TypeScript**
+- **Tailwind CSS** for styling
+- **Supabase** for auth + database
+- **Shadcn/ui** for beautiful UI components
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Backend
+- Supabase (as Backend-as-a-Service)
+- REST APIs via Supabase SDK
+- Realtime sync using Supabase channels
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## ✨ Features
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- 🔐 **Authentication** – User register, login, and logout securely
+- 🧑‍💼 **User Profiles** – View any user’s name, email, bio, and posts
+- 📝 **Public Post Feed** – All users can view and create text-only posts
+- 🖼️ **Responsive UI** – Optimized for mobile, tablet, and desktop
+- ⚡ **Realtime Updates** – Instant post updates with Supabase subscriptions
+- 🔎 **Clean UX** – Minimal and modern interface with smooth navigation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📸 Screenshots
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+![Homepage](./public/screenshots/home.png)
+![Profile Page](./public/screenshots/profile.png)
+![Post Feed](./public/screenshots/feed.png)
+
+---
+
+## 🛠️ Local Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/215N1F00A1/cyber-thread.git
+cd cyber-thread
+2. Install Dependencies
+
+npm install
+# or
+yarn install
+3. Set Up Environment Variables
+Create a .env.local file:
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+Replace with your Supabase project’s credentials.
+
+4. Run Locally
 npm run dev
-```
+Go to http://localhost:3000
 
-**Edit a file directly in GitHub**
+🧪 Demo Credentials (Optional)
+You can add test users for demo (if required). Example:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Email: demo@cyber.com
+Password: demopass123
+📁 Folder Structure
+.
+├── app/                # Next.js App Router
+│   ├── (auth)          # Login/Register pages
+│   ├── (main)          # Feed, Profile, etc.
+│   └── layout.tsx      # Shared layout
+├── components/         # Reusable UI components
+├── lib/                # Supabase client & helpers
+├── public/             # Static assets
+└── styles/             # Global styles
+🚀 Deployment
+Deployed using Vercel
+Backend hosted via Supabase
 
-**Use GitHub Codespaces**
+📩 Submission Info
+🔗 GitHub: https://github.com/215N1F00A1/cyber-thread
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🔗 Live: https://cyber-thread.vercel.app
 
-## What technologies are used for this project?
+📧 Email: [Submit to ciaancybertech@gmail.com or hr@ciaancybertech.com]
 
-This project is built with:
+🙌 Acknowledgements
+Thanks to CIAAN Cyber Tech Pvt. Ltd for the opportunity to build and learn through this real-world project.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b65f4b1b-605d-40e8-8c88-b7d93502b0ce) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+📌 License
+This project is licensed under the MIT License – feel free to use or extend it.
